@@ -116,25 +116,6 @@ const Container = () => {
               reduced manual data entry by 60%.
             </p>
           </li>
-
-          <li className="mb-8 ml-4 rounded-md p-2 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-[#25314d]  hover:shadow-lg">
-            <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 "></div>
-            <time className="mb-2 text-sm leading-none  text-white/60">
-              March 2023 - August 2023
-            </time>
-            <h3 className="text-md text-white">
-              Software Developer - Hawk Inc
-            </h3>
-            <p className="my-3 text-sm text-white/60">
-              Collaborated with a team of developers to attain the required
-              result of a doctor appointment site and during production the
-              hospital had increased patients by 45%. Visualized a business
-              intelligence dashboard that gave the front desk real-time
-              visibility into inventory and procurement using React.js and
-              Laravel. Modify and debug implemented software so that it meets
-              both user and quality requirements.
-            </p>
-          </li>
         </ol>
 
         <section className="mt-14 space-y-5" id="projects">
