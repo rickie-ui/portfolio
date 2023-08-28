@@ -34,20 +34,24 @@ const Container = () => {
           <Link
             to="https://www.github.com/rickie-ui"
             className="rounded-md border-2 border-transparent p-1 transition-all hover:border-white/50"
+            target="_blank"
           >
             <FaGithub />
           </Link>
           <Link
             to="https://www.linkedin.com/in/muciraerick"
             className="rounded-md border-2 border-transparent p-1 transition-all hover:border-white/50"
+            target="_blank"
           >
             <FaLinkedin />
           </Link>
         </div>
 
         <Link
-          to="https://brittanychiang.com/resume.pdf"
+          to="/files/ErickMuciraResume.pdf"
           className="mt-5 flex items-center gap-2 text-white transition-all hover:text-white/50 hover:underline"
+          target="_blank"
+          rel="noreferrer"
         >
           <span>View resume</span> <FaLongArrowAltRight />
         </Link>
