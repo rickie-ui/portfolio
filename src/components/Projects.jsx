@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <>
-      <div className="w-full rounded-md p-4 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-[#25314d]  hover:shadow-lg">
+      <div className="w-full rounded-md bg-[#25314d] p-2 transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-lg md:bg-transparent md:p-4  md:hover:bg-[#25314d]">
         <div
           id="indicators-carousel"
-          className="relative w-full  p-0"
+          className="relative hidden  w-full p-0 md:block"
           data-carousel="static"
         >
           <div className="relative h-52 overflow-hidden rounded-lg">
             <div
-              className=" duration-700 ease-in-out"
+              className="duration-700 ease-in-out"
               data-carousel-item="active"
             >
               <img
@@ -22,7 +22,7 @@ const Projects = () => {
               />
             </div>
 
-            <div className=" duration-700 ease-in-out" data-carousel-item>
+            <div className="duration-700 ease-in-out" data-carousel-item>
               <img
                 src="/images/dash2a.PNG"
                 className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
@@ -98,6 +98,10 @@ const Projects = () => {
           </button>
         </div>
 
+        <div className="md:hidden">
+          <img className="rounded-t-lg" src="images/dash2.PNG" alt="dash" />
+        </div>
+
         <div className="mt-4">
           <div>
             <h5 className="mb-2 flex items-center justify-between text-lg tracking-tight text-white lg:text-2xl">
@@ -119,15 +123,15 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="w-full rounded-md p-4 transition duration-300 ease-in-out hover:cursor-pointer hover:bg-[#25314d]  hover:shadow-lg">
+      <div className="w-full rounded-md bg-[#25314d] p-2 transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-lg md:bg-transparent md:p-4  md:hover:bg-[#25314d]">
         <div
           id="indicators-carousel"
-          className="relative w-full  p-0"
+          className="relative hidden  w-full  md:block"
           data-carousel="static"
         >
           <div className="relative h-52 overflow-hidden rounded-lg">
             <div
-              className="hidden duration-700 ease-in-out"
+              className="duration-700 ease-in-out"
               data-carousel-item="active"
             >
               <img
@@ -137,7 +141,7 @@ const Projects = () => {
               />
             </div>
 
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <div className="duration-700 ease-in-out" data-carousel-item>
               <img
                 src="/images/dash1a.PNG"
                 className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
@@ -211,6 +215,10 @@ const Projects = () => {
               <span className="sr-only">Next</span>
             </span>
           </button>
+        </div>
+
+        <div className="md:hidden">
+          <img className="rounded-t-lg" src="images/dash1.PNG" alt="dash" />
         </div>
 
         <div className="mt-4">
