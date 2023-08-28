@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <>
-      <div className="w-full rounded-md bg-[#25314d] p-2 transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-lg md:bg-transparent md:p-4  md:hover:bg-[#25314d]">
+      <div className="w-full rounded-md bg-[#25314d] transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-lg md:bg-transparent md:p-4 md:hover:bg-[#25314d]">
         <div
           id="indicators-carousel"
           className="relative hidden  w-full p-0 md:block"
@@ -102,7 +102,7 @@ const Projects = () => {
           <img className="rounded-t-lg" src="images/dash2.PNG" alt="dash" />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 p-2 md:p-0">
           <div>
             <h5 className="mb-2 flex items-center justify-between text-lg tracking-tight text-white lg:text-2xl">
               Human Resource{" "}
@@ -123,7 +123,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="w-full rounded-md bg-[#25314d] p-2 transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-lg md:bg-transparent md:p-4  md:hover:bg-[#25314d]">
+      <div className="w-full rounded-md bg-[#25314d]  transition duration-300 ease-in-out hover:cursor-pointer hover:shadow-lg md:bg-transparent md:p-4  md:hover:bg-[#25314d]">
         <div
           id="indicators-carousel"
           className="relative hidden  w-full  md:block"
@@ -221,7 +221,7 @@ const Projects = () => {
           <img className="rounded-t-lg" src="images/dash1.PNG" alt="dash" />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 p-2 md:p-0">
           <div>
             <h5 className="mb-2 flex items-center justify-between text-lg tracking-tight text-white lg:text-2xl">
               Medically{" "}
