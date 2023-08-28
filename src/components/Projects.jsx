@@ -12,7 +12,7 @@ const Projects = () => {
         >
           <div className="relative h-52 overflow-hidden rounded-lg">
             <div
-              className="hidden duration-700 ease-in-out"
+              className=" duration-700 ease-in-out"
               data-carousel-item="active"
             >
               <img
@@ -22,7 +22,7 @@ const Projects = () => {
               />
             </div>
 
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <div className=" duration-700 ease-in-out" data-carousel-item>
               <img
                 src="/images/dash2a.PNG"
                 className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
