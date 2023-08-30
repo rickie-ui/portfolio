@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Typed from "react-typed";
 import { FaLinkedin, FaGithub, FaLongArrowAltRight } from "react-icons/fa";
 import Footer from "./Footer";
 import Projects from "./Projects";
@@ -27,10 +28,22 @@ const Container = () => {
           <p className=" leading-6 tracking-wide opacity-80">
             I build user friendly websites amd turn the design mockups to
             maximize the user experience
+            <br />
+            <Typed
+              strings={[
+                "Let's connect on Linkedin.",
+                "Let's connect on Github.",
+                "Take a look at my resume below, contact details included.",
+              ]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop
+              smartBackspace
+            ></Typed>
           </p>
         </div>
 
-        <div className="mt-10 flex gap-1 text-2xl">
+        <div className="mt-5 flex gap-1 text-2xl">
           <Link
             to="https://www.github.com/rickie-ui"
             className="rounded-md border-2 border-transparent p-1 transition-all hover:border-white/50"
