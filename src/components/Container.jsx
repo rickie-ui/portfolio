@@ -1,12 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Typed from "react-typed";
+import Typed from "typed.js";
 import { FaLinkedin, FaGithub, FaLongArrowAltRight } from "react-icons/fa";
 import Footer from "./Footer";
 import Projects from "./Projects";
 
 const Container = () => {
   const location = useLocation();
+
+  const el = useRef(null);
+  // Create reference to store the Typed instance itself
+  const typed = useRef(null);
 
   useEffect(() => {
     if (location.hash) {
@@ -15,6 +19,27 @@ const Container = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
+
+    // typed js
+    const options = {
+      strings: [
+        "Let's connect on Linkedin.",
+        "Let's connect on Github.",
+        "Take a look at my resume below, contact details included.",
+      ],
+      typeSpeed: 40,
+      backSpeed: 50,
+      loop: true,
+    };
+
+    // elRef refers to the <span> rendered below
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      // Make sure to destroy Typed instance during cleanup
+      // to prevent memory leaks
+      typed.current.destroy();
+    };
   }, [location]);
 
   return (
@@ -29,17 +54,7 @@ const Container = () => {
             I build user friendly websites amd turn the design mockups to
             maximize the user experience
             <br />
-            <Typed
-              strings={[
-                "Let's connect on Linkedin.",
-                "Let's connect on Github.",
-                "Take a look at my resume below, contact details included.",
-              ]}
-              typeSpeed={40}
-              backSpeed={50}
-              loop
-              smartBackspace
-            ></Typed>
+            <span ref={el} />
           </p>
         </div>
 
